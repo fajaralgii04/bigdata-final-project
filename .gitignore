@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+# Environments
+.env
+.venv/
+venv/
+# Jupyter
+.ipynb_checkpoints
+# System
+.DS_Store
+# Logs
+logs/
