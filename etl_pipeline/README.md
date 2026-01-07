@@ -9,13 +9,21 @@ untuk memproses data janji temu medis hingga siap dimuat ke Data Warehouse.
 
 ## Struktur ETL
 etl_pipeline/
+
 ├── extract_source1.py
+
 ├── extract_source2.py
+
 ├── transform_cleaning.py
+
 ├── transform_standardization.py
+
 ├── transform_enrichment.py
+
 ├── data_validation.py
+
 └── load_warehouse.py
+
 
 
 ## Tahapan Proses
