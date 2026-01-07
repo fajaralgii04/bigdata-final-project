@@ -1,20 +1,20 @@
--- =========================================
--- CREATE TABLES : STAR SCHEMA
--- =========================================
+-- ================================
+-- CREATE TABLES (STAR SCHEMA)
+-- ================================
 
--- Dimensi Pasien
+-- Dimension: Patient
 CREATE TABLE IF NOT EXISTS dim_patient (
     patient_id REAL PRIMARY KEY,
     gender TEXT
 );
 
--- Dimensi Lokasi
+-- Dimension: Location
 CREATE TABLE IF NOT EXISTS dim_location (
     neighbourhood TEXT PRIMARY KEY,
     region TEXT
 );
 
--- Tabel Fakta Janji Temu
+-- Fact Table: Appointments
 CREATE TABLE IF NOT EXISTS fact_appointments (
     appointment_id INTEGER PRIMARY KEY,
     patient_id REAL,
